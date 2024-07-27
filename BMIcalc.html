@@ -1,0 +1,26 @@
+<!DOCTYPE JSON>
+<html>
+<head >
+    <title>BMI Calculator</title>
+</head>
+<body>
+<form id="input section">
+    <label for="weight lbs">Weight in pounds<br></label>
+    <input type="number" id="weight lbs"><br>
+    <label for="height inches">Height in inches<br></label>
+    <input type="number" id="height inches">
+    
+</form>
+<button onclick="calcBMI()">Calculate BMI</button>
+<script id="Weight section">
+    var weight=document.getElementById("weight lbs");
+    var height=document.getElementbyId("height inches");
+    function calcBMI(){
+        var BMI= (weight/(height*height))*703;
+        print(BMI)
+    }
+
+
+</script>
+</body>
+</html>
